@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo2.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>D-Store</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <div class="wrapper flex-grow-1">
+    <div>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">D-Store</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Computers</a>
+                  <a class="dropdown-item" href="#">Screens</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Accessories</a>
+                </div>
+              </li> 
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        <!-- Navbar -->
+    </div>
+    <!-- Form -->
+    <div class="d-flex flex-row bd-highlight mb-2 justify-content-center">
+      <div class="d-flex flex-column w-50 p-3 justify-content-center">
+        <!-- Products -->
+        <form>
+          <h2>Sản phẩm</h2>
+          <div class="form-group">
+            <label for="formGroupInput">Tên sản phẩm</label>
+            <input type="text" class="form-control" id="formGroupInput" placeholder="Mỳ tôm Hảo Hảo">
+          </div>
+          <div class="form-group">
+            <label for="formGroupInput2">Xuất xứ</label>
+            <input type="text" class="form-control" id="formGroupInput2" placeholder="Acecook">
+          </div>
+          <div class="form-group">
+            <label for="formGroupInput3">Đơn giá (VND)</label>
+            <input type="text" class="form-control" id="formGroupInput3" placeholder="4000">
+          </div>
+        </form>
+        <div class="d-flex flex-row submit-button">
+          <button type="button" onclick="add_child()" class="btn btn-danger submit mr-2">Thêm</button>
+          <button type="button" class="btn btn-info">Hủy</button>
+        </div>
+      </div>
+      <!-- Products -->
+      <div class="d-flex w-50 p-3 justify-content-center mt-5">
+        <div class="table-responsive">
+          <table class="table table-index">
+          <thead>
+              <tr>
+                  <th scope="col">STT</th>
+                  <th scope="col">Tên sp</th>
+                  <th scope="col">Giá</th>
+                  <th scope="col"></th>
+              </tr>
+          </thead>
+          <tbody id="tbody">
+              <tr id="p1">
+                  <th scope="row">1</th>
+                  <td>Omachi</td>
+                  <td>6000</td>
+                  <td>
+                      <div>
+                          <a href="#"><button type="button" class="btn btn-primary">Sửa</button></a>
+                          <a><button type="button" class="btn btn-danger" onclick="del_child()">Xóa</button></a>
+                      </div>
+                  </td>
+              </tr>
+              <tr id="p2">
+                  <th scope="row">2</th>
+                  <td>Gấu đỏ</td>
+                  <td>3000</td>
+                  <td>
+                      <div>
+                          <a href="#"><button type="button" class="btn btn-primary">Sửa</button></a>
+                          <button type="button" class="btn btn-danger" onclick="del_child()">Xóa</button>
+                      </div>
+                  </td>
+              </tr>
+              <tr id="p3">
+                  <th scope="row">3</th>
+                  <td>22</td>
+                  <td>11</td>
+                  <td>
+                      <div>
+                          <a href="#"><button type="button" class="btn btn-primary">Sửa</button></a>
+                          <button type="button" class="btn btn-danger" onclick="del_child()">Xóa</button>
+                      </div>
+                  </td>
+              </tr>
+          </tbody>
+          </table>
+      </div>
+      </div>
+    </div>
+    <!-- Form -->
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 bg-dark text-light">© 2021 Copyright:
+      <a href="#">D-Store</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script src="main.js"></script>
+</body>
+</html>
