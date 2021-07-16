@@ -25,16 +25,16 @@
             <div class="form__container">
                 <fieldset>
                     <legend>Nhập thông tin sản phẩm</legend>
-                    <label for="name">Tên sản phẩm </label>
+                    <label for="name">Tên sản phẩm: </label>
                     <input type="text" placeholder="Hãy nhập tên sản phẩm..." name="ten" id="ten" maxlength="50" autofocus required autocomplete="address-level1"><br>
-                    <label for="id">Mã sản phẩm </label>
-                    <input type="text" name="masp" id="masp" maxlength="30"><br>
+                    <label for="id">Mã sản phẩm: </label>
+                    <input type="text" placeholder="Hãy nhập mã sản phẩm..." name="masp" id="masp" maxlength="30"><br>
                     <label for="">Loại sản phẩm: </label><br>
                     <input type="checkbox" name="loaisp" id="" value="1">Đồ gia dụng</input><br>
                     <input type="checkbox" name="loaisp" id="" value="2">Thiết bị điện</input><br>
                     <input type="checkbox" name="loaisp" id="" value="3">Sách</input><br>
                     <input type="checkbox" name="loaisp" id="" value="4">Thiết bị xây dựng</input><br>
-                    <label for="">Đơn vị tính </label>
+                    <label for="">Đơn vị tính: </label>
                     <select name="" id="donvitinh">
                         <option value="">--Hãy chọn đơn vị--</option>
                         <option value="1">Chiếc</option>
@@ -42,20 +42,20 @@
                         <option value="3">Lô</option>
                         <option value="4">Thùng</option>
                     </select><br>
-                    <label for="">Giá </label>
+                    <label for="">Giá: </label>
                     <input type="number" name="gia" id="gia" value="10000" min="0" max=""><br>
-                    <label for="">Ngày nhập </label>
+                    <label for="">Ngày nhập: </label>
                     <input type="date" name="" id=""><br>
-                    <label for="">Mô tả </label><br>
-                    <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                    <input type="file" name="file" id="file"><br>
-                    <button type="submit">Submit</button>
+                    <label for="">Mô tả: </label><br>
+                    <textarea name="" id="" placeholder="Hãy nhập mô tả sản phẩm..." cols="30" rows="10"></textarea><br>
+                    <!-- <input type="file" name="file" id="file"><br> -->
+                    <button class="button button-submit" type="submit">Lưu</button>
                 </fieldset>
             </div>
             <div class="form__container">
                 <fieldset>
                     <legend>Danh sách sản phẩm</legend>
-                    <table border="1">
+                    <table class="table">
                         <th>STT</th>
                         <th>Tên sản phẩm</th>
                         <th>Giá</th>
@@ -66,7 +66,22 @@
                             <td>Áo thun</td>
                             <td>200000</td>
                             <td>Cái</td>
-                            <td><button>Sửa</button><button>Xem</button><button>Xoá</button></td>
+                            <td>
+                                <button class="button button-edit" title="Xem"></button>
+                                <button class="button button-view" title="Sửa"></button>
+                                <button class="button button-delete" title="Xoá"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Quần đùi</td>
+                            <td>200000</td>
+                            <td>Cái</td>
+                            <td>
+                                <button class="button button-edit" title="Xem"></button>
+                                <button class="button button-view" title="Sửa"></button>
+                                <button class="button button-delete" title="Xoá"></button>
+                            </td>
                         </tr>
                     </table>
                 </fieldset>

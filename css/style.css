@@ -3,11 +3,14 @@
     font-size: large;
     margin: 0;
 }
-
 main {
     width: 100%;
-    height: auto;
+    height: 90vh;
     min-height: 500px;
+}
+
+main h2 {
+    margin: 2vw;
 }
 
 header {
@@ -30,10 +33,6 @@ footer {
 
 nav {
     height: 5vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; */
 }
 
 nav ul {
@@ -46,7 +45,6 @@ nav ul {
   }
   
 nav ul li {
-    /* float: left; */
     display: inline-block;
 }
 
@@ -80,4 +78,112 @@ a {
 
 .form fieldset {
     height: 70vh;
+    border-radius: 8px;
+    line-height: 3.5vh;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+fieldset input {
+    border-radius: 4px;
+}
+
+fieldset input[type=text], input[type=number], input[type=date], select {
+    float: right;
+    width: 70%;
+    border: 2px solid #ccc;
+}
+
+fieldset input[type=checkbox] {
+    margin-right: 4px;
+    border: 2px solid #ccc;
+}
+
+fieldset input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+fieldset button[type=submit] {
+    background-color: #555555;
+    color: white;
+    font-size: larger;
+    border-radius: 4px;
+}
+
+fieldset textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: black;
+}
+
+td {
+    border-top: 1px solid #ddd;
+}
+
+th {
+    background-color: antiquewhite;
+}
+
+.button {
+    color: black;
+    font-size: medium;
+    border-radius: 4px;
+    margin: 1px;
+}
+
+.button-submit:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+}
+
+.button-submit {
+    padding: 5px 16px;
+}
+
+.button-edit, .button-view, .button-delete {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    background-color: unset;
+    height: 20px;
+    width: 16px;
+}
+
+.button-edit {
+    background-image: url("../img/pencil.svg");
+}
+
+.button-view {
+    background-image: url("../img/search.svg");
+}
+
+.button-delete {
+    background-image: url("../img/trash.svg");
+}
+
+.row-item {
+    padding: 5px 5px;
+    width: 90%;
+    display: flex;
+}
+
+.div-30 {
+    width: 30%;
+    max-width: 30%;
+}
+
+.div-70 {
+    width: 70%;
+    max-width: 70%;
 }
