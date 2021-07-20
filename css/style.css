@@ -42,17 +42,21 @@ nav ul {
     overflow: hidden;
     background-color: #333;
     height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   
 nav ul li {
-    display: inline-block;
+    height: 100%;
 }
 
 nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 14px;
+    padding: 1vh;
+    height: 100%;
 }
 
 nav li a:hover {
@@ -77,10 +81,9 @@ a {
 }
 
 .form fieldset {
-    height: 70vh;
+    height: fit-content;
     border-radius: 8px;
     line-height: 3.5vh;
-    padding: 10px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -88,13 +91,13 @@ fieldset input {
     border-radius: 4px;
 }
 
-fieldset input[type=text], input[type=number], input[type=date], select {
-    float: right;
-    width: 70%;
+fieldset input[type=text], input[type=number], input[type=date], input[type=email], select {
+    float: left;
+    width: 90%;
     border: 2px solid #ccc;
 }
 
-fieldset input[type=checkbox] {
+fieldset input[type=checkbox], input[type=radio] {
     margin-right: 4px;
     border: 2px solid #ccc;
 }
@@ -111,13 +114,12 @@ fieldset button[type=submit] {
 }
 
 fieldset textarea {
-    width: 100%;
+    width: 90%;
     height: 150px;
-    padding: 12px 20px;
+    padding: 12px 12px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    resize: none;
 }
 
 .table {
@@ -139,7 +141,11 @@ th {
     color: black;
     font-size: medium;
     border-radius: 4px;
-    margin: 1px;
+    margin: 5px;
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 .button-submit:hover {
@@ -174,7 +180,7 @@ th {
 
 .row-item {
     padding: 5px 5px;
-    width: 90%;
+    width: 100%;
     display: flex;
 }
 
