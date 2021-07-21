@@ -19,9 +19,20 @@ fieldset, table {
     right: 0;
 }
 
-footer{
-    position: absolute;
+.footer {
+    position: fixed;
     bottom: 0;
+    width: 100vw;
     left: 0;
     right: 0;
+}
+
+@media only screen and (max-width: 823px) {
+    .footer {
+        position: fixed;
+        width: 100vw;
+    }
+    main {
+        margin-bottom: 6vh;
+    }
 }
