@@ -1,3 +1,7 @@
+header {
+    margin-bottom: 2vh;
+}
+
 legend.scheduler-border {
     width:inherit; /* Or auto */
     padding:0 10px; /* To give a bit of padding on the left and right */
@@ -6,4 +10,18 @@ legend.scheduler-border {
 
 fieldset, table {
     border-radius: 4px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
